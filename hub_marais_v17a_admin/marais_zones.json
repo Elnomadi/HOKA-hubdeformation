@@ -1,0 +1,332 @@
+{
+  "produit-mur": {
+    "letter": "A",
+    "kicker": "Mur chaussures — formation produit",
+    "title": "Les 4 univers",
+    "sub": "La vitrine du magasin — ROAD, TRAIL, HIKE, RACE.",
+    "stats": [
+      {
+        "n": "4",
+        "l": "univers"
+      },
+      {
+        "n": "12",
+        "l": "modèles"
+      },
+      {
+        "n": "60min",
+        "l": "formation"
+      }
+    ],
+    "modules": [
+      {
+        "id": "prod-road",
+        "title": "Univers ROAD",
+        "meta": [
+          "Produit",
+          "20 min",
+          "5 modèles cœur"
+        ],
+        "placeholder": true
+      },
+      {
+        "id": "prod-trail",
+        "title": "Univers TRAIL",
+        "meta": [
+          "Produit",
+          "20 min",
+          "ADN marque"
+        ],
+        "placeholder": true
+      },
+      {
+        "id": "prod-hike",
+        "title": "Univers HIKE",
+        "meta": [
+          "Produit",
+          "10 min"
+        ],
+        "placeholder": true
+      },
+      {
+        "id": "prod-race",
+        "title": "Univers RACE / Carbone",
+        "meta": [
+          "Produit",
+          "10 min"
+        ],
+        "placeholder": true
+      }
+    ]
+  },
+  "apparel-road": {
+    "letter": "B",
+    "kicker": "Mur ROAD — textile running",
+    "title": "Apparel ROAD",
+    "sub": "Textile running : tees, shorts, vestes.",
+    "stats": [
+      {
+        "n": "15min",
+        "l": "formation"
+      },
+      {
+        "n": "12",
+        "l": "produits"
+      }
+    ],
+    "modules": [
+      {
+        "id": "apparel-basics",
+        "title": "Essentials apparel",
+        "meta": [
+          "Produit",
+          "15 min"
+        ],
+        "placeholder": true
+      },
+      {
+        "id": "apparel-crosssell",
+        "title": "Techniques de cross-sell",
+        "meta": [
+          "Floor",
+          "10 min"
+        ],
+        "locked": true
+      }
+    ]
+  },
+  "race": {
+    "letter": "C",
+    "kicker": "Mur RACE — compétition",
+    "title": "Mur RACE",
+    "sub": "Cielo, Rocket, Mach X3. Plaque carbone et PEBAX.",
+    "stats": [
+      {
+        "n": "20min",
+        "l": "formation"
+      },
+      {
+        "n": "5",
+        "l": "modèles"
+      },
+      {
+        "n": "New",
+        "l": "saison"
+      }
+    ],
+    "modules": [
+      {
+        "id": "race-tech",
+        "title": "Technologies plaque",
+        "meta": [
+          "Produit",
+          "12 min",
+          "carbone / PEBAX"
+        ],
+        "placeholder": true
+      },
+      {
+        "id": "race-models",
+        "title": "Cielo X1 vs Rocket X3",
+        "meta": [
+          "Produit",
+          "8 min"
+        ],
+        "placeholder": true
+      }
+    ]
+  },
+  "floor-pos": {
+    "letter": "D",
+    "kicker": "Comptoir caisse — encaissement",
+    "title": "Caisse & POS",
+    "sub": "L'outil POS, procédures, cas sensibles.",
+    "stats": [
+      {
+        "n": "55min",
+        "l": "formation"
+      },
+      {
+        "n": "7",
+        "l": "chapitres"
+      }
+    ],
+    "modules": [
+      {
+        "id": "pos-main",
+        "title": "L'outil POS en détail",
+        "meta": [
+          "Floor",
+          "20 min"
+        ],
+        "placeholder": true
+      },
+      {
+        "id": "pos-returns",
+        "title": "Échanges & remboursements",
+        "meta": [
+          "Floor",
+          "15 min"
+        ],
+        "placeholder": true
+      },
+      {
+        "id": "pos-sensitive",
+        "title": "Transactions sensibles",
+        "meta": [
+          "Floor",
+          "20 min"
+        ],
+        "placeholder": true
+      }
+    ]
+  },
+  "stock-gstore": {
+    "letter": "E",
+    "kicker": "Stock / réserve — gestion du stock",
+    "title": "G-Store Mastery",
+    "sub": "La plateforme Deckers de bout en bout — RFID, cycle count, Runner App. 22 chapitres.",
+    "stats": [
+      {
+        "n": "2",
+        "l": "formations"
+      },
+      {
+        "n": "22",
+        "l": "chapitres"
+      },
+      {
+        "n": "G-Store",
+        "l": "live"
+      }
+    ],
+    "modules": [
+      {
+        "id": "gstore",
+        "title": "G-Store Mastery",
+        "meta": [
+          "Stock",
+          "55 min",
+          "22 chapitres"
+        ],
+        "readable": true
+      },
+      {
+        "id": "stock-ops",
+        "title": "Stock ops — livraisons & RTW",
+        "meta": [
+          "Stock",
+          "75 min"
+        ],
+        "placeholder": true
+      },
+      {
+        "id": "rfid-advanced",
+        "title": "RFID avancé",
+        "meta": [
+          "Stock",
+          "20 min"
+        ],
+        "locked": true
+      }
+    ]
+  },
+  "run-club": {
+    "letter": "F",
+    "kicker": "Run Club — événement du samedi",
+    "title": "Activation Run Club",
+    "sub": "Comment activer un Run Club — timeline J-7 à J+2.",
+    "stats": [
+      {
+        "n": "5",
+        "l": "phases"
+      },
+      {
+        "n": "28",
+        "l": "checkpoints"
+      },
+      {
+        "n": "15min",
+        "l": "lecture"
+      }
+    ],
+    "modules": [
+      {
+        "id": "rc-activation",
+        "title": "Activation en 5 phases",
+        "meta": [
+          "Event",
+          "15 min"
+        ],
+        "placeholder": true
+      },
+      {
+        "id": "rc-kiosque",
+        "title": "Kiosque iPad Run Club",
+        "meta": [
+          "Outil",
+          "10 min"
+        ],
+        "placeholder": true
+      },
+      {
+        "id": "rc-bouncy",
+        "title": "BOUNCY — newsletter",
+        "meta": [
+          "Comm",
+          "8 min"
+        ],
+        "locked": true
+      }
+    ]
+  },
+  "try-on": {
+    "letter": "G",
+    "kicker": "Banquette — essayage et conseil",
+    "title": "Service Try-On",
+    "sub": "L'expérience essayage — 7 étapes, standard des 3 paires.",
+    "stats": [
+      {
+        "n": "7",
+        "l": "étapes"
+      },
+      {
+        "n": "25min",
+        "l": "formation"
+      },
+      {
+        "n": "3 paires",
+        "l": "minimum"
+      }
+    ],
+    "modules": [
+      {
+        "id": "tryon-process",
+        "title": "Try-On en 7 étapes",
+        "meta": [
+          "Floor",
+          "15 min"
+        ],
+        "placeholder": true
+      },
+      {
+        "id": "runner-app",
+        "title": "Runner App",
+        "meta": [
+          "Floor",
+          "10 min"
+        ],
+        "placeholder": true
+      },
+      {
+        "id": "cross-cat",
+        "title": "Cross-sell accessoires",
+        "meta": [
+          "Floor",
+          "8 min"
+        ],
+        "locked": true
+      }
+    ]
+  }
+}

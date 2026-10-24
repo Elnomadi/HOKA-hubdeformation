@@ -1,0 +1,1278 @@
+{
+  "moduleTitle": "G-Store Mastery",
+  "pdfFile": "gstore_training_guide.pdf",
+  "sections": [
+    {
+      "id": "s1",
+      "num": "I",
+      "title": "Les fondamentaux",
+      "chapters": [
+        "ch1",
+        "ch2",
+        "ch3"
+      ]
+    },
+    {
+      "id": "s2",
+      "num": "II",
+      "title": "Runner App & Try-On",
+      "chapters": [
+        "ch4",
+        "ch5",
+        "ch6",
+        "ch7"
+      ]
+    },
+    {
+      "id": "s3",
+      "num": "III",
+      "title": "Inventory Management",
+      "chapters": [
+        "ch8",
+        "ch9",
+        "ch10",
+        "ch11",
+        "ch12"
+      ]
+    },
+    {
+      "id": "s4",
+      "num": "IV",
+      "title": "Cycle Count",
+      "chapters": [
+        "ch13",
+        "ch14",
+        "ch15",
+        "ch16"
+      ]
+    },
+    {
+      "id": "s5",
+      "num": "V",
+      "title": "Reporting",
+      "chapters": [
+        "ch17",
+        "ch18",
+        "ch19"
+      ]
+    },
+    {
+      "id": "s6",
+      "num": "VI",
+      "title": "Cas limites & troubleshooting",
+      "chapters": [
+        "ch20",
+        "ch21",
+        "ch22"
+      ]
+    }
+  ],
+  "chapters": {
+    "ch1": {
+      "num": "01",
+      "duration": "2 min",
+      "title": "Bienvenue dans G-Store",
+      "intro": "G-Store est la nouvelle plateforme Deckers pour la gestion du stock et le Runner App. Elle remplace plusieurs outils historiques et unifie les processus.",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "G-Store supporte les demandes produits, les cycle counts, le shipping, le receiving et une nouvelle expérience de try-on. L'objectif : passer moins de temps à chercher les produits, plus de temps à créer de la connexion avec le client."
+        },
+        {
+          "type": "heading",
+          "content": "Ce que G-Store permet concrètement"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Envoyer et traiter des demandes produits via le Runner App",
+            "Réaliser les cycle counts avec le lecteur RFID",
+            "Créer et recevoir des transferts (store-to-store ou RTW)",
+            "Encoder de nouveaux tags EPC et mettre à jour leur statut RFID",
+            "Imprimer des étiquettes d'affichage produit",
+            "Accéder au reporting via le Splash Page Retail"
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "À qui s'adresse G-Store",
+          "content": "Tous les store associates et les store leaders. Chaque pièce de la plateforme est conçue pour libérer du temps au service du client."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Compatibilité device — important",
+          "content": "G-Store est disponible UNIQUEMENT sur les MPOS. Pas sur iPad.\n\n• iPhone : NA, EMEA & Japan\n• V2Pro / X5 Android MPOS : China"
+        },
+        {
+          "type": "keypoint",
+          "content": "Si on résume la promesse de G-Store en une phrase : « Moins de temps à chercher, plus de temps à vendre et conseiller. »"
+        },
+        {
+          "type": "pdf",
+          "file": "gstore_training_guide.pdf",
+          "title": "gStore Training Guide (officiel Deckers)",
+          "sub": "61 pages · EN · PDF · 3,6 Mo"
+        }
+      ]
+    },
+    "ch2": {
+      "num": "02",
+      "duration": "2 min",
+      "title": "Connexion et accès",
+      "intro": "G-Store utilise le SSO Deckers. Pas de création de compte, pas de mot de passe à gérer : ton ID employé suffit.",
+      "blocks": [
+        {
+          "type": "steps",
+          "title": "Procédure de connexion",
+          "items": [
+            {
+              "text": "Ouvre l'application G-Store sur ton MPOS."
+            },
+            {
+              "text": "Connecte-toi via SSO en utilisant ton ID employé Deckers.",
+              "note": "Format : employee_id@deckers.com"
+            },
+            {
+              "text": "Tu es connecté·e."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "MFA — bonne nouvelle",
+          "content": "La suppression du MFA est activée depuis la version 2.52.1 (7464). Pas besoin de repasser par un code à chaque connexion."
+        },
+        {
+          "type": "compare",
+          "left": {
+            "label": "Problème compte",
+            "items": [
+              "Compte mal configuré, SSO qui ne reconnaît pas ton ID",
+              "→ Vois ton Store Manager, il peut vérifier ta configuration Workday"
+            ]
+          },
+          "right": {
+            "label": "Problème technique",
+            "items": [
+              "App qui plante, Sled qui ne connecte pas",
+              "→ Help Desk ticket avec les détails + version de l'app"
+            ]
+          }
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Approvers automatiques",
+          "content": "Les Key Holders et au-dessus sont automatiquement configurés comme Approvers via SSO (Workday). Pas besoin de ticket Retail Help sauf souci de login."
+        }
+      ]
+    },
+    "ch3": {
+      "num": "03",
+      "duration": "3 min",
+      "title": "Le lecteur RFID Zebra (Sled)",
+      "intro": "Le Sled Zebra est le compagnon permanent du MPOS. Il sert aux fonctions avancées : locate produit via Geiger, cycle count, encodage de tags.",
+      "blocks": [
+        {
+          "type": "heading",
+          "content": "Quand on l'utilise"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Full Cycle Count",
+            "Update RFID EPC (changer le code produit sur un tag)",
+            "Encoder de nouveaux tags RFID",
+            "Localiser un produit via le mode Geiger du Runner App"
+          ]
+        },
+        {
+          "type": "steps",
+          "title": "Connecter le Sled au MPOS",
+          "items": [
+            {
+              "text": "Allume le lecteur RFID Zebra et vérifie que la LED Bluetooth clignote."
+            },
+            {
+              "text": "Si pas connecté : Settings → Bluetooth → Sélectionne le bon device RFID. Première fois : maintiens le trigger du Sled appuyé pour sécuriser la connexion."
+            },
+            {
+              "text": "Retourne dans l'app G-Store."
+            },
+            {
+              "text": "Tape l'icône Sled en haut à droite."
+            },
+            {
+              "text": "Tape « Scan barcode » et scanne le numéro de série sur le dessus du Sled.",
+              "note": "Tu peux aussi saisir manuellement le numéro de série."
+            },
+            {
+              "text": "G-Store affiche « Device Connected »."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Pairing raté — à repérer",
+          "content": "Si Battery ou Power affiche 0, le pairing a échoué.\n\n→ Sélectionne « Unpair handheld scanner » → re-paire le device → vérifie que les niveaux Battery et Power s'affichent AVANT de poursuivre."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Hack du RFD40",
+          "content": "Sur le modèle RFD40 (le noir), le numéro de série est sous le capot. Imprime et plastifie une photo du code-barres pour éviter d'ouvrir le capot à chaque pairing."
+        }
+      ]
+    },
+    "ch4": {
+      "num": "04",
+      "duration": "3 min",
+      "title": "Runner App — comprendre le rôle",
+      "intro": "Le Runner App dans G-Store permet d'offrir un vrai service 1:1 et de transformer le try-on en moment de vente premium.",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Les équipes peuvent demander instantanément des styles depuis le BOH vers le sales floor pour les apporter au client, lui présenter de nouveaux modèles, créer un moment de try-on fluide et élevé."
+        },
+        {
+          "type": "text",
+          "content": "Les demandes sont fulfillées par d'autres membres de l'équipe et trackées dans l'app. Elles sont quasi-instantanées. Le système track les temps d'acceptation et de fulfillment — ces données servent au coaching et à la reconnaissance."
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Pas obligatoire pour chaque try-on",
+          "content": "Le Runner App n'est pas requis pour chaque single try-on. Les modèles de staffing et contraintes magasin varient — chaque store trouve ce qui fonctionne."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Best practice d'usage",
+          "content": "Plus le Runner App est utilisé, plus on capture de données pour mieux comprendre les clients. Utilise-le sur les moments à fort impact (staffing fort), ou intègre-le aux processus quotidiens où il apporte le plus de valeur."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Articles damaged ou offsite",
+          "content": "Les articles damaged ou offsite doivent avoir leur statut RFID mis à jour (Damaged, ORIS, etc.) — ça les retire de la disponibilité Runner App tout en gardant l'exactitude de l'inventaire."
+        }
+      ]
+    },
+    "ch5": {
+      "num": "05",
+      "duration": "4 min",
+      "title": "Runner App — envoyer une demande",
+      "intro": "Le workflow pour demander un produit depuis le floor au BOH. L'objectif : rester avec le client pendant qu'un équipier court chercher.",
+      "blocks": [
+        {
+          "type": "steps",
+          "title": "Envoyer une demande produit",
+          "items": [
+            {
+              "text": "Tape l'onglet Walk-in pour aller sur l'écran Runner App."
+            },
+            {
+              "text": "Tape « Help a Sale »."
+            },
+            {
+              "text": "Pour trouver le produit, utilise une des 4 options :",
+              "note": "Search · View All Products · View by Category · Scan Barcode"
+            },
+            {
+              "text": "Sur la page produit, examine : Location, Colors, Sizes, Latest Store on Hand."
+            },
+            {
+              "text": "Tape « Add to Cart » (plusieurs articles possibles)."
+            },
+            {
+              "text": "Tape « Send Request » pour envoyer la demande au sales floor."
+            },
+            {
+              "text": "Continue à guider le client pendant que l'équipier court chercher."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Best practice",
+          "content": "Pour les demandes Runner App, référence-toi au champ Latest Store On Hand. C'est la vue la plus à jour de ce qui est réellement disponible."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Offsite inventory — attention",
+          "content": "L'inventaire Offsite compte dans ton total stock on hand, MAIS les articles en Offsite ne peuvent pas être demandés via Runner App."
+        },
+        {
+          "type": "heading",
+          "content": "À l'arrivée du produit"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Présente le produit de manière élevée",
+            "Chaussures lacées et propres",
+            "Delivered avec une chaussure sortie, papier packaging retiré"
+          ]
+        }
+      ]
+    },
+    "ch6": {
+      "num": "06",
+      "duration": "3 min",
+      "title": "Runner App — répondre à une demande",
+      "intro": "Côté runner : tu reçois une demande, tu la ramènes vite et bien. Organisation et communication font toute la différence.",
+      "blocks": [
+        {
+          "type": "steps",
+          "title": "Fulfiller une demande",
+          "items": [
+            {
+              "text": "Sois connecté·e à G-Store avec la page Runner App ouverte."
+            },
+            {
+              "text": "Notification « pending sales floor request » quand une demande arrive."
+            },
+            {
+              "text": "Tape « View Request » puis « Accept Request »."
+            },
+            {
+              "text": "Tape l'article pour voir sa location dans le BOH."
+            },
+            {
+              "text": "Localise, tape « Pick » pour mettre à jour le statut."
+            },
+            {
+              "text": "Tape « Finish » en remettant l'article."
+            }
+          ]
+        },
+        {
+          "type": "compare",
+          "left": {
+            "label": "Organisation",
+            "items": [
+              "Maintenir l'ordre des demandes",
+              "Livrer dans l'ordre de réception"
+            ]
+          },
+          "right": {
+            "label": "Communication",
+            "items": [
+              "Produit incorrect ? Swap avant de continuer",
+              "Nouveau produit à essayer ? Communique dans le Runner App"
+            ]
+          }
+        },
+        {
+          "type": "heading",
+          "content": "Si tu ne trouves pas l'article"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Option A : Sales Floor Requests → Assign to Me pour qu'un collègue reprenne",
+            "Option B : Geiger Counter — depuis le détail article → Locate via RFID Sled"
+          ]
+        }
+      ]
+    },
+    "ch7": {
+      "num": "07",
+      "duration": "5 min",
+      "title": "Try-On Experience — le standard global",
+      "intro": "Transformer chaque try-on en moment mémorable à forte conversion. Rapide, personnel, complet.",
+      "blocks": [
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "La promesse Try-On",
+          "content": "Un try-on bien géré = un moment de confiance + une conversion plus haute. Le Runner App et le standard global sont les outils pour y arriver."
+        },
+        {
+          "type": "heading",
+          "content": "Les 7 étapes du Try-On"
+        },
+        {
+          "type": "steps",
+          "title": "Protocole de service",
+          "items": [
+            {
+              "text": "Accueille le client et découvre ses besoins + taille rapidement.",
+              "note": "Questions sur le fit. Propose la mesure SafeSize (HOKA) ou Brannick."
+            },
+            {
+              "text": "Encourage le try-on immédiatement. Demande produit dans le Runner App."
+            },
+            {
+              "text": "Répète la demande au client pour confirmation."
+            },
+            {
+              "text": "STANDARD GLOBAL : demande toujours AU MOINS 2 paires additionnelles = total de 3 propositions.",
+              "note": "Tailles · Couleurs · Styles similaires · Franchise HOKA · Nouveautés"
+            },
+            {
+              "text": "Assure un endroit confortable pour le try-on. Propose des socks."
+            },
+            {
+              "text": "Pendant que le runner apporte, continue à connecter — chaussettes, apparel, cross-cat, événements."
+            },
+            {
+              "text": "À l'arrivée : mets-toi à genou, invite à essayer, indique le miroir, écoute le feedback. Partage la return & exchange policy."
+            }
+          ]
+        },
+        {
+          "type": "keypoint",
+          "content": "Le standard global des 3 paires n'est pas une contrainte — c'est un multiplicateur. Chaque paire additionnelle augmente la conversion et le panier moyen."
+        }
+      ]
+    },
+    "ch8": {
+      "num": "08",
+      "duration": "3 min",
+      "title": "Inventory Management — vue d'ensemble",
+      "intro": "G-Store couvre receiving, shipments (store-to-store + RTW), encodage de tags, mises à jour de statuts RFID et full cycle counts.",
+      "blocks": [
+        {
+          "type": "keypoint",
+          "content": "Quand l'inventaire est juste, on peut servir le client qui veut tel produit, quand il le veut. Point."
+        },
+        {
+          "type": "heading",
+          "content": "Statuts RFID — les deux familles"
+        },
+        {
+          "type": "compare",
+          "left": {
+            "label": "Qui comptent dans l'inventaire",
+            "items": [
+              "Available",
+              "Damaged",
+              "Hold",
+              "Display",
+              "On Mannequin"
+            ]
+          },
+          "right": {
+            "label": "Qui NE comptent PAS",
+            "items": [
+              "Wasted (EPC détruit ou remplacé)",
+              "In-Transit (transfert en cours)",
+              "ORIS (Online Return in Store)"
+            ]
+          }
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Damages — la règle d'or",
+          "content": "Tous les Damages doivent avoir leur tag RFID mis en statut Damaged PENDANT qu'ils sont physiquement en magasin. Sinon ils restent dispos pour les demandes Runner App."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Online returns",
+          "content": "Mets le statut RFID en ORIS pour les exclure des cycle counts. Sinon, shield ou retire ces articles avant de démarrer un count."
+        }
+      ]
+    },
+    "ch9": {
+      "num": "09",
+      "duration": "5 min",
+      "title": "Shipping — créer un transfert",
+      "intro": "Chaque boîte DOIT avoir son propre Shipment et Carton number. Ne combine jamais plusieurs boîtes sous un seul transfert.",
+      "blocks": [
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Deux règles non négociables",
+          "content": "1. Chaque boîte = un transfer avec son propre numéro. Ne pas combiner.\n\n2. Ne JAMAIS créer de transferts pendant qu'un cycle count est en cours."
+        },
+        {
+          "type": "heading",
+          "content": "Notes shipping à connaître"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Tous les tags EPC des transfers finalisés passent en « In Transit ». Expédier ASAP.",
+            "Transfer vers store Halo → envoie depuis Halo (NA & CHINA).",
+            "Transfer vers store SIM → envoie depuis SIM (JAPAN & EMEA).",
+            "Damages : tags en Damaged pendant qu'ils sont en magasin. RTW-Damages retire le statut et crée le transfer dans la même étape."
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Best practice",
+          "content": "Scanne les items dans chaque boîte au fur et à mesure que tu la remplis."
+        },
+        {
+          "type": "steps",
+          "title": "Procédure de création",
+          "items": [
+            {
+              "text": "Tape « Transfer Stock » puis « Start New Process »."
+            },
+            {
+              "text": "Choisis Store to Store ou Store to DC."
+            },
+            {
+              "text": "Localise le store/DC destination, sélectionne une Reason, submit."
+            },
+            {
+              "text": "Valide les détails, imprime le label.",
+              "note": "Shipment ID = RTW · Carton = Store to Store"
+            },
+            {
+              "text": "Scanne les produits via RFID (UN TRIGGER PAR ITEM)."
+            },
+            {
+              "text": "Items non ajoutés physiquement → tape poubelle pour les supprimer."
+            },
+            {
+              "text": "« Finalize products » → vérifie numéro carton = Barcode à l'écran."
+            },
+            {
+              "text": "« Mark Done » → ça crée le shipment et l'envoie en processing."
+            }
+          ]
+        },
+        {
+          "type": "compare",
+          "left": {
+            "label": "« This product has been scanned before »",
+            "items": [
+              "Vérifie que tu as déjà le bon nombre d'exemplaires attendus"
+            ]
+          },
+          "right": {
+            "label": "« EPC state not allowed for this process »",
+            "items": [
+              "Seuls Available ou Damaged peuvent entrer dans un transfer",
+              "Check le statut via un autre device G-Store"
+            ]
+          }
+        }
+      ]
+    },
+    "ch10": {
+      "num": "10",
+      "duration": "5 min",
+      "title": "Receiving — réceptionner un carton",
+      "intro": "Receiving confirme des CARTONS COMPLETS, pas des items individuels. Finish complète le carton entier.",
+      "blocks": [
+        {
+          "type": "keypoint",
+          "content": "Tous les items assignés à un carton sont automatiquement reçus dans l'inventaire quand tu tapes Finish."
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Cartons de sources différentes",
+          "content": "Les cartons doivent être reçus séparément selon leur source d'origine. Exemple : 10 cartons warehouse + 3 store-to-store = 2 actions de receiving distinctes."
+        },
+        {
+          "type": "steps",
+          "title": "Étape 1 : scanner les cartons",
+          "items": [
+            {
+              "text": "Assure-toi que le Sled est connecté."
+            },
+            {
+              "text": "Tape « Receive Boxes » dans My Work."
+            },
+            {
+              "text": "Scanne les labels de tous les cartons."
+            },
+            {
+              "text": "« Continue » → liste des cartons scannés."
+            }
+          ]
+        },
+        {
+          "type": "steps",
+          "title": "Étape 2 : confirmer les items",
+          "items": [
+            {
+              "text": "« Continue to Item Scanning » puis « Start Scanning »."
+            },
+            {
+              "text": "Sélectionne le Scan Mode (Bulk High / Medium / Low / Single).",
+              "note": "La puissance choisie ne peut plus être changée pour cette action."
+            },
+            {
+              "text": "« Start Scanning » et promène le Sled autour des boîtes."
+            },
+            {
+              "text": "« Finish Capturing » pour revoir les résultats."
+            },
+            {
+              "text": "Sélectionne la location : Salesfloor / Backstock / Offsite."
+            },
+            {
+              "text": "« Finish » → G-Store affiche le total de cartons reçus."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Ce que Finish fait exactement",
+          "content": "• Chaque carton est entièrement reçu, même si tous les tags RFID n'ont pas été scannés\n• Les items Missing n'empêchent PAS le receiving\n• Tous les cartons sont reçus en full dès que Finish est sélectionné"
+        }
+      ]
+    },
+    "ch11": {
+      "num": "11",
+      "duration": "2 min",
+      "title": "Imprimer des étiquettes d'affichage",
+      "intro": "Les display labels permettent d'identifier les produits sur le sales floor avec style, couleur, taille, prix.",
+      "blocks": [
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Ce que le label montre",
+          "content": "Style, couleur, taille, prix (original + markdown si applicable). Les prix promotionnels NE sont PAS supportés."
+        },
+        {
+          "type": "steps",
+          "title": "Procédure",
+          "items": [
+            {
+              "text": "My Work → « Print Label » en bas à gauche."
+            },
+            {
+              "text": "Scanne le code-barres via caméra iPhone, RFID, ou cherche dans la company master list."
+            },
+            {
+              "text": "Vérifie les détails puis « Print Display Label »."
+            },
+            {
+              "text": "Le label est imprimé sur la Zebra du store."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Si le prix est faux",
+          "content": "Si le pricing n'est pas correct dans G-Store, bascule sur SIM pour imprimer."
+        }
+      ]
+    },
+    "ch12": {
+      "num": "12",
+      "duration": "3 min",
+      "title": "Créer un tag EPC",
+      "intro": "Si un tag EPC est damaged, missing, ou associé au mauvais item, tu peux encoder un nouveau tag.",
+      "blocks": [
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Détruire l'ancien tag",
+          "content": "Quand tu remplaces un tag parce qu'il était associé au mauvais item, retire et détruis proprement l'ancien tag. Sinon il sera scanné lors des futurs cycle counts."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "Astuce pour les items de display",
+          "content": "Tu peux utiliser les statuts RFID « Display » ou « On Mannequin » pour identifier ces items SANS affecter l'exactitude de ton Cycle Count."
+        },
+        {
+          "type": "steps",
+          "title": "Encoder un nouveau tag EPC",
+          "items": [
+            {
+              "text": "Scanner connecté."
+            },
+            {
+              "text": "My Work → Inventory Management → Encode RFID tags."
+            },
+            {
+              "text": "Cherche dans le product catalog ou scanne le UPC avec le laser."
+            },
+            {
+              "text": "« Continue to scan RFID tag »."
+            },
+            {
+              "text": "Prends un tag EPC vierge, place-le contre le scanner."
+            },
+            {
+              "text": "Appuie une fois sur le trigger."
+            },
+            {
+              "text": "Appuie une fois de plus — trois bips = done."
+            }
+          ]
+        }
+      ]
+    },
+    "ch13": {
+      "num": "13",
+      "duration": "3 min",
+      "title": "Cycle Count — pourquoi c'est critique",
+      "intro": "Le Cycle Count est l'un des outils les plus importants pour protéger l'inventaire du magasin.",
+      "blocks": [
+        {
+          "type": "text",
+          "content": "Des counts précis donnent à l'équipe une visibilité temps réel sur ce qu'on a vraiment en stock. Ils flaguent les écarts qui peuvent indiquer de la perte ou des erreurs de processus."
+        },
+        {
+          "type": "keypoint",
+          "content": "Quand les variances sont attrapées tôt, on peut investiguer et corriger avant qu'elles ne s'accumulent."
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Logistique — à respecter",
+          "content": "• Démarre à 5h00 heure locale ou plus tard (SIM stock on hand précis).\n\n• NE reçois PAS de transferts le matin avant ton cycle count.\n\n• Online returns : retire, shield ou expédie AVANT le count."
+        }
+      ]
+    },
+    "ch14": {
+      "num": "14",
+      "duration": "5 min",
+      "title": "Cycle Count — procédure pas à pas",
+      "intro": "La séquence complète : setup, scan par location, submit.",
+      "blocks": [
+        {
+          "type": "steps",
+          "title": "Démarrer le count",
+          "items": [
+            {
+              "text": "Sled connecté."
+            },
+            {
+              "text": "My Work → Inventory Management → Full Count."
+            },
+            {
+              "text": "« Start Count » pour démarrer un nouveau."
+            },
+            {
+              "text": "Sélectionne la Location, « Start Scanning »."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "success",
+          "title": "Multi-utilisateurs",
+          "content": "Une fois le cycle count démarré, plusieurs utilisateurs peuvent scanner en parallèle. Chaque EPC est compté une seule fois même scanné plusieurs fois."
+        },
+        {
+          "type": "steps",
+          "title": "Scanner et submit par location",
+          "items": [
+            {
+              "text": "« Start Scanning » puis promène-toi pour capturer tous les EPCs."
+            },
+            {
+              "text": "« Finish Capturing » pour revoir."
+            },
+            {
+              "text": "« Submit Location »."
+            },
+            {
+              "text": "Complète chaque zone du store."
+            }
+          ]
+        }
+      ]
+    },
+    "ch15": {
+      "num": "15",
+      "duration": "3 min",
+      "title": "Cycle Count — mode offline",
+      "intro": "Le Cycle Count est la seule fonction G-Store avec capacité offline. Règles précises à respecter.",
+      "blocks": [
+        {
+          "type": "callout",
+          "variant": "warning",
+          "title": "Règle critique",
+          "content": "Tu DOIS avoir du Wi-Fi pour compléter une location ou submit un count. Mais tu peux scanner temporairement en offline."
+        },
+        {
+          "type": "steps",
+          "title": "Procédure offline",
+          "items": [
+            {
+              "text": "AVANT de passer offline : démarre la Location avec connexion."
+            },
+            {
+              "text": "Une fois sur la page de scanning, tu peux passer offline."
+            },
+            {
+              "text": "« Start Scanning » pour démarrer le count de cette location."
+            },
+            {
+              "text": "Continue à scanner — l'app affiche « Offline mode »."
+            },
+            {
+              "text": "Quand le Wi-Fi est à nouveau dispo → « Finish Capturing »."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Edge case Sled offline",
+          "content": "Si ton device est offline ET que le Sled se déconnecte, reconnecter risque de faire crasher l'app. Reconnecte d'abord au WiFi + submit la location, PUIS reconnecte le Sled."
+        }
+      ]
+    },
+    "ch16": {
+      "num": "16",
+      "duration": "4 min",
+      "title": "Cycle Count — approbation managériale",
+      "intro": "Un count soumis n'est PAS un count validé. L'approbation manager doit être faite le jour même.",
+      "blocks": [
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Règle immuable",
+          "content": "Le count doit être approuvé via l'Inventory Review (menu de gauche) pour être considéré comme complet. Les managers reçoivent une notif système toutes les 2 heures."
+        },
+        {
+          "type": "steps",
+          "title": "Procédure d'approbation",
+          "items": [
+            {
+              "text": "Menu en haut à gauche → « Inventory Review »."
+            },
+            {
+              "text": "« Review » pour voir les détails."
+            },
+            {
+              "text": "Store leader review toutes les variances identifiées."
+            },
+            {
+              "text": "Utilise les onglets Over/Under · Filter · Details."
+            },
+            {
+              "text": "Satisfait → « Approve »."
+            }
+          ]
+        },
+        {
+          "type": "compare",
+          "left": {
+            "label": "Count approuvé ≥ 98%",
+            "items": [
+              "Flow automatique vers SIM",
+              "Ajustements automatiques"
+            ]
+          },
+          "right": {
+            "label": "Count approuvé < 98%",
+            "items": [
+              "Saisir une raison dans les commentaires",
+              "Regional Operations review",
+              "Après 4 counts sous 98% → Regional Ops Manager"
+            ]
+          }
+        }
+      ]
+    },
+    "ch17": {
+      "num": "17",
+      "duration": "2 min",
+      "title": "Reporting — accéder aux rapports",
+      "intro": "G-Store expose un reporting dédié aux Store Leaders via web portal.",
+      "blocks": [
+        {
+          "type": "steps",
+          "title": "Connexion au reporting",
+          "items": [
+            {
+              "text": "https://us.gstore.cloud/"
+            },
+            {
+              "text": "Log in via SSO avec EmployeeID@Deckers.com"
+            }
+          ]
+        },
+        {
+          "type": "keypoint",
+          "content": "5 vues principales : Customer Service, Usage Data, Stock Activation, Shipping/Receiving, Cycle Count. Chaque vue a son export CSV."
+        }
+      ]
+    },
+    "ch18": {
+      "num": "18",
+      "duration": "3 min",
+      "title": "Reporting — Customer Service (Runner App)",
+      "intro": "La vue Customer Service donne la visibilité sur les try-on.",
+      "blocks": [
+        {
+          "type": "steps",
+          "title": "Accéder à la vue",
+          "items": [
+            {
+              "text": "Login au reporting."
+            },
+            {
+              "text": "Dropdown Analytics → « Customer Service »."
+            },
+            {
+              "text": "Applique Store Location + Date Range."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "content": "Les données à review"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Sales floor requests : Open · Processed · Completed",
+            "Task times : fulfillment, accept, pick",
+            "Item Request Conversion : items vendus dans les 2h après try-on",
+            "SafeSize data (HOKA stores)",
+            "Most Requested SKUs"
+          ]
+        }
+      ]
+    },
+    "ch19": {
+      "num": "19",
+      "duration": "4 min",
+      "title": "Reporting — Shipping, Receiving, Cycle Count",
+      "intro": "Les autres vues du reporting pour piloter l'activité stock.",
+      "blocks": [
+        {
+          "type": "heading",
+          "content": "Shipping & Receiving Data"
+        },
+        {
+          "type": "text",
+          "content": "Reporting mis à jour dans les 5 minutes qui suivent les processus. Au-delà, helpdesk ticket."
+        },
+        {
+          "type": "callout",
+          "variant": "tip",
+          "title": "ASN tip",
+          "content": "Les ASN Numbers commençant par 3 sont des transferts store-to-store créés dans G-Store."
+        },
+        {
+          "type": "heading",
+          "content": "Cycle Count Data"
+        },
+        {
+          "type": "list",
+          "items": [
+            "Click drop-down Inventory → Inventory Review",
+            "Expected Items, Items Counted, SIM Reported",
+            "Variance totals, accuracy rate",
+            "Item-level detail avec location du count",
+            "Export CSV"
+          ]
+        }
+      ]
+    },
+    "ch20": {
+      "num": "20",
+      "duration": "5 min",
+      "title": "15 cas non conformes à connaître",
+      "intro": "Compilation des cas sensibles qui reviennent le plus souvent en magasin.",
+      "blocks": [
+        {
+          "type": "callout",
+          "variant": "danger",
+          "title": "Mode d'emploi de ce chapitre",
+          "content": "Chaque cas ci-dessous est un piège classique. Si tu les connais tous, tu couvres 95% des erreurs process G-Store les plus coûteuses."
+        },
+        {
+          "type": "nc-case",
+          "num": "01",
+          "title": "Combiner plusieurs boîtes sous un seul transfert",
+          "rule": "Chaque boîte DOIT avoir son propre Shipment et Carton number.",
+          "impact": "Problèmes d'inventaire et de receiving.",
+          "action": "Créer un transfert par boîte, sans exception."
+        },
+        {
+          "type": "nc-case",
+          "num": "02",
+          "title": "Créer un transfert pendant un cycle count",
+          "rule": "Jamais de transferts pendant qu'un cycle count est en cours.",
+          "impact": "Variances automatiques, re-count obligatoire.",
+          "action": "Attendre l'approbation du cycle count avant tout transfer."
+        },
+        {
+          "type": "nc-case",
+          "num": "03",
+          "title": "Transférer vers un store Halo depuis SIM",
+          "rule": "Destination Halo → envoyer depuis Halo. Destination SIM → envoyer depuis SIM.",
+          "impact": "Le store destination ne pourra pas recevoir.",
+          "action": "Vérifier le système du store cible avant de lancer."
+        },
+        {
+          "type": "nc-case",
+          "num": "04",
+          "title": "Damage non converti en statut RFID Damaged",
+          "rule": "Tags en statut Damaged pendant qu'ils sont en magasin.",
+          "impact": "Le damage reste disponible dans Runner App.",
+          "action": "Mettre en Damaged dès détection. RTW-Damages retire le statut dans la même étape."
+        },
+        {
+          "type": "nc-case",
+          "num": "05",
+          "title": "Carton unrecognized au receiving",
+          "rule": "Delete et re-scanne. Si toujours unrecognized → helpdesk ticket.",
+          "impact": "Items apparaîtront en extra au prochain cycle count.",
+          "action": "Mettre carton de côté, retirer label, ticket avec détails + photos."
+        },
+        {
+          "type": "nc-case",
+          "num": "06",
+          "title": "Recevoir un transfer Halo dans SIM",
+          "rule": "Shipped depuis Halo → recevoir dans Halo. Depuis SIM → dans SIM.",
+          "impact": "Impossible de recevoir dans le mauvais système.",
+          "action": "Vérifier le source system avant de démarrer."
+        },
+        {
+          "type": "nc-case",
+          "num": "07",
+          "title": "Recevoir des transferts le matin du cycle count",
+          "rule": "Les transferts reçus ce matin ne seront pas dans le SIM Snapshot.",
+          "impact": "Variances automatiques dans le count.",
+          "action": "Rescheduler. Sinon shield / retirer du champ RFID pendant le count."
+        },
+        {
+          "type": "nc-case",
+          "num": "08",
+          "title": "Cycle count sous 98% d'accuracy",
+          "rule": "Doit être approuvé avec raison dans les commentaires.",
+          "impact": "Si plusieurs counts sous 98% → ajustement manuel.",
+          "action": "Saisir la raison. Investiguer les sources de variance."
+        },
+        {
+          "type": "nc-case",
+          "num": "09",
+          "title": "Cycle count non approuvé le jour même",
+          "rule": "SIM update daily — un count non approuvé le jour-même doit être rejeté.",
+          "impact": "Le bouton Approve disparaît.",
+          "action": "Discarder : Inventory Review → Review → Reject → Discard. Deck ticket Operations."
+        },
+        {
+          "type": "nc-case",
+          "num": "10",
+          "title": "Online returns inclus dans le cycle count",
+          "rule": "Les online returns ne font pas partie de l'inventaire magasin.",
+          "impact": "Compte comme surplus → variance.",
+          "action": "Statut ORIS avant le count, OU retirer / shield / expédier."
+        },
+        {
+          "type": "nc-case",
+          "num": "11",
+          "title": "Tentative d'ajouter un EPC In Transit à un transfer",
+          "rule": "Seuls Available ou Damaged peuvent entrer dans un transfer.",
+          "impact": "Bannière rouge « EPC state not allowed ».",
+          "action": "Checker via un autre device G-Store. Si In Transit → à investiguer."
+        },
+        {
+          "type": "nc-case",
+          "num": "12",
+          "title": "Reconnecter le Sled offline en app offline",
+          "rule": "Device offline + Sled déconnecté : reconnecter risque de crasher.",
+          "impact": "Perte potentielle du scan en cours.",
+          "action": "D'abord reconnecter WiFi + submit location. Ensuite Sled."
+        },
+        {
+          "type": "nc-case",
+          "num": "13",
+          "title": "Créer un nouveau EPC pour un item display",
+          "rule": "Ne pas créer de nouveaux tags pour les items de display.",
+          "impact": "Déséquilibre le cycle count avec des tags fantômes.",
+          "action": "Utiliser statuts Display ou On Mannequin."
+        },
+        {
+          "type": "nc-case",
+          "num": "14",
+          "title": "Combiner warehouse + store-to-store dans un seul receiving",
+          "rule": "Les cartons doivent être reçus séparément selon leur source.",
+          "impact": "Erreurs système.",
+          "action": "2 actions de receiving distinctes."
+        },
+        {
+          "type": "nc-case",
+          "num": "15",
+          "title": "Baser Runner App sur Active Inventory",
+          "rule": "Pour les demandes Runner App, utiliser Latest Store On Hand.",
+          "impact": "Risque d'écart avec le stock réel.",
+          "action": "Toujours Latest Store On Hand pour les décisions client en temps réel."
+        }
+      ]
+    },
+    "ch21": {
+      "num": "21",
+      "duration": "2 min",
+      "title": "Troubleshooting rapide",
+      "intro": "Les 2 problèmes qu'on rencontre le plus souvent et comment les régler.",
+      "blocks": [
+        {
+          "type": "heading",
+          "content": "App version / install"
+        },
+        {
+          "type": "steps",
+          "title": "Si l'app est capricieuse",
+          "items": [
+            {
+              "text": "Vérifie que tu as la version actuelle installée."
+            },
+            {
+              "text": "Ouvre Apps@Work."
+            },
+            {
+              "text": "Tape Update / Reinstall."
+            }
+          ]
+        },
+        {
+          "type": "heading",
+          "content": "Le Sled ne se connecte pas"
+        },
+        {
+          "type": "steps",
+          "title": "Checklist Sled",
+          "items": [
+            {
+              "text": "La LED Bluetooth clignote-t-elle ?"
+            },
+            {
+              "text": "Pour pairing : ouvre l'icône Sled dans G-Store."
+            },
+            {
+              "text": "Scanne le serial du Sled."
+            },
+            {
+              "text": "Confirme « Device is Connected »."
+            },
+            {
+              "text": "Première fois : maintiens le trigger pour sécuriser."
+            },
+            {
+              "text": "Rien à faire → disconnect la batterie et restart."
+            }
+          ]
+        },
+        {
+          "type": "callout",
+          "variant": "info",
+          "title": "Les 2 contacts à retenir",
+          "content": "Access / tech issues → Help Desk Ticket.\nClarification process / business → Regional Retail Operations contact."
+        }
+      ]
+    },
+    "ch22": {
+      "num": "22",
+      "duration": "3 min",
+      "title": "FAQ express",
+      "intro": "Les questions qui reviennent le plus souvent, regroupées par thème.",
+      "blocks": [
+        {
+          "type": "faq-group",
+          "title": "App & Login",
+          "items": [
+            {
+              "q": "Est-ce que G-Store nécessite un download manuel ?",
+              "a": "L'app est pushée automatiquement aux stores. Download possible via l'Ivanti Go App si besoin."
+            },
+            {
+              "q": "Ticket Retail Help pour mes leads ?",
+              "a": "Non. Keyholders et au-dessus sont auto-set up comme Approvers via SSO (Workday)."
+            },
+            {
+              "q": "Users ont besoin de MFA ?",
+              "a": "Non, MFA suppression active depuis v2.52.1 (7464)."
+            }
+          ]
+        },
+        {
+          "type": "faq-group",
+          "title": "RFID & Encoding",
+          "items": [
+            {
+              "q": "Encoder immédiatement ?",
+              "a": "Oui. Items pas dans le Halo Master file doivent être encodés dans G-Store."
+            },
+            {
+              "q": "Encoder pour display only ?",
+              "a": "Non — utilise statuts Display ou On Mannequin."
+            }
+          ]
+        },
+        {
+          "type": "faq-group",
+          "title": "Cycle Count",
+          "items": [
+            {
+              "q": "Multiple personnes qui scannent en parallèle ?",
+              "a": "Oui. Résultats combinés en un total unique. Chaque EPC compté une fois."
+            },
+            {
+              "q": "Count sous 98% ?",
+              "a": "Review Regional Operations, ajustement manuel si pas d'amélioration."
+            },
+            {
+              "q": "Démarrer tôt ?",
+              "a": "Dès 5h00 locale. Pas de transferts le matin du count."
+            },
+            {
+              "q": "Accuracy négative ?",
+              "a": "Normal avec stock on hand négatif. Continue. Négatif ajusté dans SIM dès 98%+."
+            },
+            {
+              "q": "Count non approuvé le jour même ?",
+              "a": "Doit être rejeté et recomposé. Menu → Inventory Review → Reject → Discard."
+            }
+          ]
+        },
+        {
+          "type": "faq-group",
+          "title": "Shipping / Receiving",
+          "items": [
+            {
+              "q": "Comment recevoir transferts hors G-Store ?",
+              "a": "Shipped Halo → Halo. Shipped SIM → SIM."
+            },
+            {
+              "q": "Peut-on faire du receiving offline ?",
+              "a": "Non — WiFi ou hotspot requis."
+            },
+            {
+              "q": "Items en statut New ?",
+              "a": "Pas encore reçus dans G-Store. Check In Transit reporting."
+            }
+          ]
+        },
+        {
+          "type": "faq-group",
+          "title": "Runner App / Try-On",
+          "items": [
+            {
+              "q": "Standard du nombre d'items ?",
+              "a": "Au moins 2 style suggestions additionnels pendant un try-on = total de 3."
+            },
+            {
+              "q": "Try-on brand-specific ?",
+              "a": "Rollout initial brand-agnostic (HOKA + UGG)."
+            },
+            {
+              "q": "Obligatoire pour chaque try-on ?",
+              "a": "Non. Chaque store trouve ce qui marche. Plus utilisé = plus de données."
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
